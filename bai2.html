@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Định dạng màu chữ - màu nền</title>
+    <style>
+        .khung-ngoai {
+            width: 480px;
+            border: 1px solid black;
+            padding: 15px;
+            background-color: white;
+        }
+        .tieu-de {
+            background-color: orange;
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px 0;
+            margin: -15px -15px 20px -15px;
+        }
+        .dong {
+            margin-bottom: 12px;
+        }
+        .dong label {
+            display: inline-block;
+            width: 90px;
+        }
+        .dong input {
+            width: 300px;
+        }
+        .nut {
+            margin-left: 90px;
+            width: 300px;
+            text-align: right;
+        }
+        .ket-qua {
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="khung-ngoai">
+    <div class="tieu-de">
+        ĐỊNH MÀU CHỮ – MÀU NỀN</div>
+    <form method="POST">
+        <div class="dong">
+            <label>Nội dung:</label>
+            <input type="text" name="noi_dung">
+        </div>
+        <div class="dong">
+            <label>Màu nền:</label>
+            <input type="text" name="mau_nen" placeholder="#D4B800">
+        </div>
+        <div class="dong">
+            <label>Màu chữ:</label>
+            <input type="text" name="mau_chu" placeholder="#FFFFFF">
+        </div>
+        <div class="nut">
+            <button type="submit" name="xem">Xem kết quả</button>
+        </div>
+    </form>
+   
+</div>
+</body>
+</html>
